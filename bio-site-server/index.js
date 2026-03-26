@@ -29,7 +29,7 @@ app.use(
 );
 
 app.use(express.json({ limit: "10kb" }));
-app.use(["/api/contact", "/contact"], contactRoute);
+app.use("/api/contact", contactRoute);
 
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 3001;
