@@ -1,0 +1,40 @@
+:root {
+  /* ===== Colors ===== */
+  --color-bg: #0f0f0f;
+  --color-fg: #eaeaea;
+  --color-muted: #9ca3af;
+  --color-border: #2a2a2a;
+
+  /* ===== Aliases ===== */
+  --bg: var(--color-bg);
+  --text: var(--color-fg);
+  --text-muted: var(--color-muted);
+  --border: var(--color-border);
+
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* ===== Typography ===== */
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-xxl: 3rem;
+  --text-xl: 2.5rem;
+  --text-lg: 2rem;
+  --text-md: 1.15rem;
+  --text-sm: 1rem;
+  --text-usm: 0.85rem;
+
+  /* ===== Spacing ===== */
+  --space-xs: 0.25rem;
+  --space-gap: 0.5rem;
+  --space-sgap: 0.25rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+
+  /* ===== Layout ===== */
+  --container-width: 1280px;
+
+  /* ===== Transitions ===== */
+  --transition-duration: 0.15s;
+
+}

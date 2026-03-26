@@ -1,0 +1,43 @@
+.hero{
+    text-align: left;
+
+    &__content{
+        max-width: 900px;
+    }
+
+    &__title{
+        font-size: clamp(3.4rem, 7vw, 5.6rem);
+        line-height: 1.1;
+        font-weight: 600;
+        margin-bottom: var(--space-xs);
+    }
+
+
+    &__subtitle{
+        font-size: clamp(1rem, 1.2rem, 1.6rem);
+        line-height: 1.4;
+        color: var(--color-muted);
+        margin-top: var(--space-sm);
+        margin-bottom: 18px;
+    }
+
+    &__description{
+        margin-top: 0;
+        font-size: clamp(0.8rem, 1.05rem, 1.1rem);
+        line-height: 1.75;
+        color: var(--color-muted);
+    }
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+
+        & > a{
+            transition: color var(--transition-duration) ease;
+        }
+
+        & > a:hover{
+            color: var(--color-muted);
+        }
+    }
+}

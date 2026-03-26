@@ -1,0 +1,23 @@
+.projects {
+  &__title {
+    font-size: var(--text-xl);
+    margin-bottom: 100px;
+  }
+
+  &__group {
+    margin-bottom: 150px;
+  }
+
+  &__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-muted);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  &__list, &__list-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 400px));
+    gap: var(--space-md);
+  }
+}

@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: outline var(--transition-duration) ease, outline-offset var(--transition-duration) ease;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+:focus-visible {
+    border-radius: 8px;
+    outline: .5px solid rgba(255,255,255,0.25);
+    outline-offset: 2px;
+}
+
+::selection{
+  background-color: var(--color-muted); 
+  color: var(--color-bg);   
+}

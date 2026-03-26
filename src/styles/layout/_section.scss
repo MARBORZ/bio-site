@@ -1,0 +1,25 @@
+.section {
+  z-index: 1;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  scroll-margin-top: 80px;
+
+  padding-block: 96px;
+
+  &--hero {
+    padding-top: 160px;
+    padding-bottom: 250px;
+  }
+
+  &--compact {
+    padding-block: 40px;
+  }
+
+  &--tight {
+    padding-block: 48px;
+  }
+
+}
