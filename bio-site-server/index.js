@@ -4,7 +4,7 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 
-import contactRoute from "../bio-site-server/routes/contact.js";
+import contactRoute from "./routes/contact.js";
 
 export const app = express();
 const isProd = process.env.NODE_ENV === "production";
@@ -31,8 +31,7 @@ app.use(
 app.use(express.json({ limit: "10kb" }));
 
 
-app.use(["/api/contact", "/contact"], contactRoute);
-app.get(["/api/test", "/test"], (req, res) => res.send("Server is alive!"));
+app.use("/api/contact", contactRoute);
 
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 3001;
