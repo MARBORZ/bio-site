@@ -4,6 +4,10 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 
+process.on("uncaughtException", (err) => {
+  console.error("ERROR:", err);
+});
+
 import contactRoute from "./routes/contact.js";
 
 export const app = express();
