@@ -1,0 +1,19 @@
+/* base */
+@use "./base/variables";
+@use "./base/reset";
+@use "./base/global";
+
+/* layout */
+@use "./layout/layout";
+@use "./layout/container";
+@use "./layout/section";
+
+/* sections */
+@use "./sections/hero";
+@use "./sections/projects";
+@use "./sections/contact";
+@use "./sections/header"; 
+@use "./sections/footer"; 
+
+/* components */
+@use "./components/project-card";

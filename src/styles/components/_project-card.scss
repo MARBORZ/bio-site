@@ -1,0 +1,117 @@
+.project-card {
+  // Main
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    cursor: pointer;
+    
+    border: 1px solid var(--color-border);
+    padding: var(--space-sm);
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+
+    transition: transform var(--transition-duration) ease, border-color var(--transition-duration) ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    // Pre-main
+    &::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;  
+
+      left: calc(var(--glow-x, 50%) - 200px);
+      top: calc(var(--glow-y, 50%) - 200px);
+
+      background: radial-gradient(
+        circle,
+        var(--card-glow-color) 0%,
+        transparent 50%
+      );
+
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      pointer-events: none;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &__text{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2.5px;
+
+      min-height: 104px;
+    }
+
+    &__title {
+      font-size: var(--text-md);
+      margin-bottom: var(--space-xs);
+      margin-top: 10px;
+    }
+
+    &__description {
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+      margin-bottom: var(--space-sm);
+    }
+
+    &__stack {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: var(--space-gap);
+    }
+
+    &__stack-item {
+      font-size: var(--text-sm);
+      padding: 0.2rem 0.5rem;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+  }
+
+  // Modificators
+  &--main {
+    --card-glow-color: rgba(120, 255, 200, 0.25);
+  }
+
+  &--experiment {
+    --card-glow-color: rgba(120, 180, 255, 0.25);
+  }
+
+  &--planned {
+    --card-glow-color: rgba(255, 200, 120, 0.25);
+  }
+
+  &--disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+      
+    &:hover {
+        transform: none;
+    }
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .project-card::before {
+      left: -160px;
+      top: -160px;
+      background: radial-gradient(
+        circle,
+        var(--card-glow-color) 0%,
+        transparent 70%
+      );
+  }
+}
