@@ -10,7 +10,7 @@ process.on("uncaughtException", (err) => {
 
 import contactRoute from "./routes/contact.js";
 
-export const app = express();
+const app = express();
 const isProd = process.env.NODE_ENV === "production";
 
 const allowedOrigins = isProd
@@ -36,13 +36,10 @@ app.use(express.json({ limit: "10kb" }));
 
 app.use("/api/contact", contactRoute);
 
-if (process.env.NODE_ENV !== "production") {
-  const PORT = process.env.PORT || 3001;
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
+const PORT = process.env.PORT || 3001;
 
-export default (req, res) => {
-  return app(req, res);
-};
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+export default app;
