@@ -31,10 +31,8 @@ app.use(
 app.use(express.json({ limit: "10kb" }));
 
 
-app.use("/api/contact", contactRoute);
-app.use("/contact", contactRoute);
-
-app.get("/api/test", (req, res) => res.send("Server is alive!"));
+app.use(["/api/contact", "/contact"], contactRoute);
+app.get(["/api/test", "/test"], (req, res) => res.send("Server is alive!"));
 
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 3001;
