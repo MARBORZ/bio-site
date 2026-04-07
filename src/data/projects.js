@@ -3,7 +3,7 @@ export const projects = {
     {
       id: "yatzy",
       title: "Yatzy",
-      slug: "Yatzy",
+      slug: "yatzy",
       description:
         "Dice game with full scoring logic and clear separation between game engine and UI.",
       stack: ["JavaScript", "HTML", "CSS"],
@@ -26,7 +26,7 @@ export const projects = {
     {
       id: "datetime",
       title: "Date & Time UI",
-      slug: "Date-time-ui",
+      slug: "date-time-ui",
       description:
         "Minimal UI experiment focused on typography and JavaScript date/time handling.",
       stack: ["JavaScript", "HTML", "CSS"],
@@ -36,7 +36,7 @@ export const projects = {
     {
       id: "skrekkeparken",
       title: "Skrekkeparken",
-      slug: "Skrekkeparken",
+      slug: "skrekkeparken",
       description:
         "Interactive map project using Leaflet and JSON-driven data rendering.",
       stack: ["JavaScript", "Leaflet", "JSON"],
@@ -46,7 +46,7 @@ export const projects = {
     {
       id: "kroppfitness",
       title: "Kropp Fitness — Layout Experiment",
-      slug: "Kropp-fitness-layout",
+      slug: "kropp-fitness-layout",
       description:
         "Semantic HTML & modern CSS and landing page. Focus on structure, spacing, and clean layout.",
       stack: ["JavaScript", "HTML", "CSS"],
@@ -59,7 +59,7 @@ export const projects = {
     {
       id: "todo",
       title: "Advanced Todo App",
-      slug: "Advanced-todo-app",
+      slug: "advanced-todo-app",
       description:
         "Scalable task manager focused on clean state architecture and UI clarity.",
       stack: ["React", "SCSS"],
@@ -69,7 +69,7 @@ export const projects = {
     {
       id: "dashboard",
       title: "Interactive Dashboard",
-      slug: "Interactive-dashboard",
+      slug: "interactive-dashboard",
       description:
         "Data-driven dashboard with filters, charts, and analytical views.",
       stack: ["React", "SCSS"],
