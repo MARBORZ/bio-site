@@ -1,6 +1,6 @@
 # marborz.one — Bio Site (Full-Stack Portfolio)
 
-A production-ready full-stack portfolio website featuring a React/Vite frontend and Node.js/Express backend with a working contact form. Deployed on Google Cloud VPS with Nginx, HTTPS, and pm2 process management.
+Full-stack portfolio with React frontend and Express backend. Has a working contact form that actually sends emails. Running on Google Cloud VPS with Nginx and HTTPS.
 
 ## 🌐 Live Site
 
@@ -8,17 +8,17 @@ A production-ready full-stack portfolio website featuring a React/Vite frontend 
 
 ## 🎯 About
 
-marborz.one is a professional portfolio website showcasing projects, skills, and providing a functional contact form with real email delivery. The site demonstrates full-stack development capabilities, from frontend animations to backend API integration and production deployment.
+My portfolio site. Shows projects, has a contact form that works, and runs on a real server. Built to learn full-stack deployment — from React animations to backend APIs and server setup.
 
 ## ✨ Features
 
-- **Responsive Portfolio Layout** — Hero section, project showcase, and contact form
-- **Working Contact Form** — Real email delivery via Resend API
-- **Smooth Animations** — Framer Motion for fluid UI transitions
-- **API Rate Limiting** — Protection against spam and abuse
-- **HTTPS Enabled** — Secure connection with Let's Encrypt SSL
-- **Production Infrastructure** — VPS deployment with Nginx and pm2
-- **BEM Methodology** — Clean, maintainable SCSS architecture
+- **Responsive Layout** — Works on mobile and desktop
+- **Contact Form** — Sends real emails via Resend API
+- **Animations** — Framer Motion for page transitions
+- **Rate Limiting** — Stops spam on the contact form
+- **HTTPS** — Let's Encrypt SSL certificate
+- **VPS Deployment** — Nginx reverse proxy + pm2 process manager
+- **BEM CSS** — Organized SCSS with BEM naming
 
 ## 🛠️ Tech Stack
 
