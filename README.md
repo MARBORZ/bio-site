@@ -1,5 +1,7 @@
 # bio-site
 
+English · [Norsk](README.no.md)
+
 First version of my portfolio. React + Vite on the front, small Express server for the contact form, emails go through Resend.
 
 Built to learn full-stack deployment. Was running on a Google Cloud VM with Nginx and HTTPS. Current site is in [marborz](https://github.com/MARBORZ/marborz).
