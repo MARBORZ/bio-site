@@ -1,13 +1,11 @@
 # bio-site
 
-First version of my portfolio site: React (Vite) on the front, a small Express server that sends contact form messages through Resend.
+First version of my portfolio. React + Vite on the front, small Express server for the contact form, emails go through Resend.
 
-It ran on a Google Cloud VM behind Nginx with HTTPS. The current site lives in [marborz](https://github.com/MARBORZ/marborz).
+Built to learn full-stack deployment. Was running on a Google Cloud VM with Nginx and HTTPS. Current site is in [marborz](https://github.com/MARBORZ/marborz).
 
-## Structure
-
-- `src/` – React app, Framer Motion for animations, SCSS
-- `bio-site-server/` – Express API with rate limiting for the contact form
+- `src/` – React, Framer Motion, SCSS
+- `bio-site-server/` – Express API with rate limiting
 
 ## Run
 
@@ -16,7 +14,7 @@ npm install
 npm run dev
 ```
 
-The server needs a `.env` with `RESEND_API_KEY`, `FROM_EMAIL`, `MAIL_TO` and `PORT`:
+Server needs `.env` with `RESEND_API_KEY`, `FROM_EMAIL`, `MAIL_TO`, `PORT`:
 
 ```bash
 cd bio-site-server
