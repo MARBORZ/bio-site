@@ -4,7 +4,7 @@ Full-stack portfolio with React frontend and Express backend. Has a working cont
 
 ## 🌐 Live Site
 
-**URL:** https://marborz.one
+**URL:** https://marborz.one (v2 version. not v1)
 
 ## 🎯 About
 
