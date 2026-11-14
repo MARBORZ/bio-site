@@ -23,4 +23,13 @@ server/.env
 *.njsproj
 *.sln
 *.sw?
-*.env
+*.envnode_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+AGENTS.md
